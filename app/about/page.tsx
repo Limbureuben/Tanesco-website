@@ -26,7 +26,7 @@ export default function AboutPage() {
                                 At Lanix, our mission is to empower businesses with digital tools that drive growth and innovation. We believe in the power of technology to transform industries and improve lives.
                             </p>
                             <p className="text-muted-foreground text-lg leading-relaxed">
-                                Founded in 2023, we have quickly grown into a trusted partner for startups and enterprises alike. Our approach combines technical excellence with creative design to deliver products that stand out.
+                                Founded in 2025, we have quickly grown into a trusted partner for startups and enterprises alike. Our approach combines technical excellence with creative design to deliver products that stand out.
                             </p>
                         </div>
                         <div className="bg-muted rounded-2xl aspect-square relative overflow-hidden shadow-xl">
