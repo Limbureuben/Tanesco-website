@@ -2,7 +2,7 @@ import AnimatedSection from "../components/AnimatedSection";
 
 export default function Overview() {
   return (
-    <AnimatedSection id="overview" className="container mx-auto px-4 py-16 md:py-24">
+    <AnimatedSection id="overview" className="container mx-auto px-4 py-8 md:py-12">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         <div>
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900">Who we are</h2>

@@ -12,7 +12,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <AnimatedSection id="services" direction="right" className="container mx-auto px-4 py-16 md:py-24">
+    <AnimatedSection id="services" direction="right" className="container mx-auto px-4 py-8 md:py-12">
       <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900">Services</h2>
       <p className="mt-2 text-neutral-600 max-w-2xl">End‑to‑end capabilities to launch and grow your product.</p>
 

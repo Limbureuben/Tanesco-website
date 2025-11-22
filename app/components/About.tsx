@@ -4,7 +4,7 @@ import AnimatedSection from "../components/AnimatedSection";
 export default function About() {
   return (
     <AnimatedSection id="about" className="bg-white">
-      <div className="container mx-auto px-4 py-16 md:py-24">
+      <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="relative rounded-lg overflow-hidden shadow-sm">
             <div className="relative aspect-[4/3] w-full">

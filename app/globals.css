@@ -2,32 +2,81 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --brand: #16A34A; /* green-600 */
-  --brand-foreground: #ffffff;
+  --foreground: #0f172a;
+  /* slate-900 */
+
+  /* Brand Colors - Green & Blue */
+  --primary: #16a34a;
+  /* green-600 */
+  --primary-foreground: #ffffff;
+  --secondary: #2563eb;
+  /* blue-600 */
+  --secondary-foreground: #ffffff;
+  --accent: #0ea5e9;
+  /* sky-500 */
+  --accent-foreground: #ffffff;
+
+  /* Surface Colors */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --muted: #f0fdf4;
+  /* green-50 */
+  --muted-foreground: #64748b;
+  /* slate-500 */
+  --border: #e2e8f0;
+  /* slate-200 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-brand: var(--brand);
-  --color-brand-foreground: var(--brand-foreground);
 }
 
-/* Force light theme to match the reference design */
+.dark {
+  --background: #020617;
+  /* slate-950 */
+  --foreground: #f8fafc;
+  /* slate-50 */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #22c55e;
+  /* green-500 */
+  --primary-foreground: #0f172a;
+  --secondary: #3b82f6;
+  /* blue-500 */
+  --secondary-foreground: #ffffff;
+  --accent: #38bdf8;
+  /* sky-400 */
+  --accent-foreground: #0f172a;
+
+  --card: #0f172a;
+  /* slate-900 */
+  --card-foreground: #f8fafc;
+  --muted: #1e293b;
+  /* slate-800 */
+  --muted-foreground: #94a3b8;
+  /* slate-400 */
+  --border: #1e293b;
+  /* slate-800 */
 }
 
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -36,4 +85,25 @@ body {
   font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
     Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
     "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }

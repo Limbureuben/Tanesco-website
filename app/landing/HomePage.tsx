@@ -1,33 +1,29 @@
-import React from 'react';
+"use client";
 
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Overview from "../components/Overview";
-import About from "../components/About";
-import Services from "../components/Services";
-import Portfolio from "../components/Portfolio";
-import Team from "../components/Team";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
-import CTABand from "../components/CTABand";
-import Pricing from "../components/Pricing";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Hero from "../../components/landing/Hero";
+import Features from "../../components/landing/Features";
+import AboutSection from "../../components/landing/AboutSection";
+import ServicesSection from "../../components/landing/ServicesSection";
+import Testimonials from "../../components/landing/Testimonials";
+import ContactSection from "../../components/landing/ContactSection";
+import ProjectsSection from "../../components/landing/ProjectsSection";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main>
+      <main className="flex-grow">
         <Hero />
-        <About />
-        <Overview />
-        <Services />
-        <CTABand />
-        <Pricing />
-        <Portfolio />
-        <Team />
-        <Contact />
+        <Features />
+        <AboutSection />
+        <ServicesSection />
+        <ProjectsSection />
+        <Testimonials />
+        <ContactSection />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

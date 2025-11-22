@@ -15,7 +15,7 @@ export default function Contact() {
   const mailto = `mailto:hello@example.com?subject=Project%20Inquiry&body=${encodeURIComponent(mailBody)}`;
 
   return (
-    <AnimatedSection id="contact" className="container mx-auto px-4 py-16 md:py-24">
+    <AnimatedSection id="contact" className="container mx-auto px-4 py-8 md:py-12">
       <div className="grid lg:grid-cols-3 gap-6">
         <div className="rounded-xl border border-neutral-200 bg-white p-6">
           <h2 className="text-2xl font-semibold tracking-tight text-neutral-900">Contact Us</h2>
