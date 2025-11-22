@@ -16,7 +16,7 @@ const PROJECTS = [
     image: "/aruevent.png",
     description: "System for tracking tenants, payments, and maintenance for residential properties.",
     client: "Real Estate",
-    year: "2023",
+    year: "2025",
   },
   {
     title: "Jerusalem Children's Home",
@@ -24,7 +24,7 @@ const PROJECTS = [
     image: "/aruevent.png",
     description: "Digital presence and management tools for a children's home and donations.",
     client: "Non-Profit",
-    year: "2023",
+    year: "2025",
   },
 ];
 
